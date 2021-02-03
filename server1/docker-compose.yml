@@ -1,0 +1,17 @@
+version: '3'
+services:
+  server1:
+    container_name: server1
+    image: server1:latest
+    stdin_open: true
+    tty: true
+    environment:
+      - DOCKERHOST=${DOCKERHOST}
+      - IP=${IP}
+    ports:
+      - "4000:4000"
+    restart: always
+    cap_drop:
+      - ALL
+    volumes:
+      - .

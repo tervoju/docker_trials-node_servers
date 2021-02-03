@@ -1,0 +1,10 @@
+{
+    "database": "packages",
+    "username": "",
+    "password": "",
+    "dialect": "sqlite",
+    "storage": "packages-db.sqlite",
+    "define": {
+        "underscore": true
+    }
+}
